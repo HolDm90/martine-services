@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Martine Services | Lavage & Ménage Premium",
     description: "L'excellence au service de votre linge à Abomey-Calavi.",
-    url: 'https://martineadewale.com', // À mettre à jour après déploiement
+    url: 'https://martine-services.vercel.app', // À mettre à jour après déploiement
     siteName: 'Martine Services',
     images: [
       {
@@ -54,6 +55,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC]">
         {children}
+        <Analytics />
       </body>
     </html>
   );
