@@ -1,0 +1,16 @@
+{
+  "name": "Martine Services",
+  "short_name": "MartineS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E5EEF5",
+  "theme_color": "#003060",
+  "icons": [
+    {
+      "src": "/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
